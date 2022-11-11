@@ -1,0 +1,122 @@
+.home-container .perfil-content-edit {
+  width: 95%;
+  height: 60%;
+  background-color: #FFFFFF;
+  display: flex;
+  margin-top: 10px;
+  margin-left: 37px;
+  border-radius: 10px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.home-container .perfil-content-edit .aux-container {
+  display: flex;
+}
+
+.home-container .perfil-content-edit .aux-container .right-container {
+  display: flex;
+  flex-direction: column;
+  width: 21vw;
+  height: 250px;
+  margin-top: 120px;
+  margin-right: 44px;
+
+}
+
+
+.home-container .perfil-content-edit .aux-container .right-container img {
+  width: 181px;
+  margin-left: 10vw;
+}
+
+.home-container .perfil-content-edit .aux-container .right-container button {
+  margin-left: 10vw;
+  border: 2px solid #E60B82;
+  border-radius: 10px;
+  width: 181px;
+  height: 39px;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #E60B82;
+  margin-top: 26px;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+
+.home-container .perfil-content-edit .aux-container .right-container button:hover {
+  background-color: #E60B82;
+  color: white;
+}
+
+.home-container .perfil-content-edit .aux-container .vertical-line {
+  height: 355px;
+  width: 2px;
+  background-color: #E5E5E5;
+  margin-top: 56px;
+  margin-right: 35px;
+}
+
+.home-container .perfil-content-edit .aux-container .left-container {
+  margin-top: 52px;
+}
+
+.home-container .perfil-content-edit .aux-container .left-container .forms-edit-perfil .title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #F9A006;
+  margin-bottom: 10px;
+}
+
+.home-container .perfil-content-edit .aux-container .left-container .forms-edit-perfil input {
+  width: 413px;
+  height: 44px;
+  background: #F0F0F0;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  line-height: 24px;
+  color: #828282;
+  padding-left: 13px;
+}
+
+.home-container .perfil-content-edit .aux-container .left-container .forms-edit-perfil input:focus {
+  outline: none;
+}
+
+.home-container .perfil-content-edit .save-editions {
+  width: 249px;
+  height: 44px;
+  cursor: pointer;
+  background: #F9A006;
+  border-radius: 12px;
+  border: none;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 25px;
+  transition: 0.4s ease-out;
+}
+
+.home-container .perfil-content-edit .save-editions:hover{
+  transform: scale(1.05);
+}
+.home-container .perfil-content-edit .password-edit{
+  width: 215px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;  
+  text-align: center;
+  
+  color: #E60B82;
+}
+

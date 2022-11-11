@@ -1,0 +1,121 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  color: #656565;
+}
+
+.navbar-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  width: 260px;
+  height: 100vh;
+}
+
+.navbar-container .navbar-container-logo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 58px;
+  margin-bottom: 41px;
+}
+
+.navbar-container .navbar-container-logo .navbar-logo {
+  width: 111px;
+}
+
+.navbar-container .navbar-links {
+  width: calc(100% - 36px);
+  display: flex;
+  flex-direction: column;
+  margin-left: 36px;
+}
+
+.navbar-container .navbar-links img {
+  margin-right: 15px;
+}
+
+.navbar-container .navbar-links .project-link,
+.navbar-container .navbar-links .contract-link,
+.navbar-container .navbar-links .user-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+.navbar-container .navbar-modal {
+  width: 168px;
+  height: 83px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.28);
+  border-radius: 10px;
+  margin-top: 50vh;
+  margin-left: 50px;
+  visibility: hidden;
+}
+
+.navbar-container .navbar-modal .my-datas{
+  margin-left: 13px;
+  margin-top: 12px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.navbar-container .navbar-modal .get-out{
+  margin-left: 13px;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.navbar-container .navbar-modal .my-datas img,
+.navbar-container .navbar-modal .get-out img{
+  margin-right: 10px;
+}
+.navbar-container .navbar-user-perfil {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.navbar-container .navbar-user-perfil .navbar-user-perfil-container {
+  width: 212px;
+  height: 41px;
+  background: #F0F0F0;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.28);
+}
+
+.navbar-container .navbar-user-perfil .navbar-user-perfil-container .avatar {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  margin-left: 6px;
+  margin-right: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-container .navbar-user-perfil .navbar-user-perfil-container .user-name {
+  font-size: 14px;
+  line-height: 21px;
+  color: #F9A006;
+  margin-right: 103px;
+}
