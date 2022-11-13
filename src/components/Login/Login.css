@@ -20,13 +20,15 @@
 
 .login-modal {
   width: 504px;
-  height: 516px;
+  min-height: 516px;
   background: #FFFFFF;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.04);
   border-radius: 20px;
+  max-height: 700px;
 }
 
 .login-modal .login-logo {
@@ -34,7 +36,7 @@
   height: 66px;
   margin-top: 69px;
   margin-bottom: 30px;
-
+  
 }
 
 .login-modal .login-title {
@@ -45,7 +47,15 @@
   margin-bottom: 30px;
 }
 
-.login-modal .login-email-input {
+.login-modal .login-inputs{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-modal .login-inputs .login-email-input {
   font-size: 18px;
   line-height: 27px;
   color: #828282;
@@ -55,11 +65,11 @@
   margin-bottom: 30px;
 }
 
-.login-modal .login-email-input:focus {
+.login-modal .login-inputs .login-email-input:focus {
   outline: none;
 }
 
-.login-modal .login-password-input {
+.login-modal .login-inputs .login-password-input {
   font-size: 18px;
   line-height: 27px;
   color: #828282;
@@ -69,11 +79,11 @@
   margin-bottom: 46px;
 }
 
-.login-modal .login-password-input:focus {
+.login-modal .login-inputs .login-password-input:focus {
   outline: none;
 }
 
-.login-modal .login-button {
+.login-modal .login-inputs .login-button {
   width: 397px;
   height: 44px;
   background: #F9A006;
@@ -88,13 +98,71 @@
   margin-bottom: 21px;
 }
 
-.login-modal .login-button:hover {
+.login-modal .login-inputs .login-button:hover {
   transform: scale(1.02);
 }
 
-.login-modal .login-forgot-password {
+.login-modal .login-inputs .login-forgot-password {
   font-size: 16px;
   line-height: 24px;
   color: #F9A006;
   cursor: pointer;
+  margin-bottom: 30px;
+}
+/* responsive mobile */
+
+@media screen and (max-width: 768px) {
+  .login-modal{
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .login-modal{
+    width: 370px;
+  }
+  .login-modal .login-inputs .login-email-input {
+    width: 270px;
+  }
+  .login-modal .login-inputs .login-password-input {
+    width: 270px;
+  }
+  .login-modal .login-inputs .login-button {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .login-modal{
+    width: 300px;
+  }
+  .login-modal .login-inputs .login-email-input {
+    width: 200px;
+  }
+  .login-modal .login-inputs .login-password-input {
+    width: 200px;
+  }
+  .login-modal .login-inputs .login-button {
+    width: 230px;
+  }
+
+  .login-modal .login-logo {
+    width: 120px;
+    height: 56px;
+  }
+  .login-modal.login-title{
+    font-size: 25px;
+  }
+  .login-modal .login-inputs .login-email-input{
+    font-size: 16px;
+  }
+  .login-modal .login-inputs .login-password-input{
+    font-size: 16px;
+  } 
+  .login-modal .login-inputs .login-button {
+    font-size: 16px;
+  }
+  .login-modal .login-inputs .login-forgot-password {
+    font-size: 14px;
+  }
 }

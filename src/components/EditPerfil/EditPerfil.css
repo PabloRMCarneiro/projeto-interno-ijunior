@@ -1,6 +1,6 @@
 .home-container .perfil-content-edit {
   width: 95%;
-  height: 60%;
+  min-height: 60%;
   background-color: #FFFFFF;
   display: flex;
   margin-top: 10px;
@@ -8,6 +8,7 @@
   border-radius: 10px;
   align-items: center;
   flex-direction: column;
+  max-height: 90%;
 }
 
 .home-container .perfil-content-edit .aux-container {
@@ -27,30 +28,11 @@
 
 .home-container .perfil-content-edit .aux-container .right-container img {
   width: 181px;
+  height: 181px;
+  border-radius: 50%;
   margin-left: 10vw;
 }
 
-.home-container .perfil-content-edit .aux-container .right-container button {
-  margin-left: 10vw;
-  border: 2px solid #E60B82;
-  border-radius: 10px;
-  width: 181px;
-  height: 39px;
-  background-color: transparent;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
-  text-align: center;
-  color: #E60B82;
-  margin-top: 26px;
-  cursor: pointer;
-  transition: 0.4s ease-in-out;
-}
-
-.home-container .perfil-content-edit .aux-container .right-container button:hover {
-  background-color: #E60B82;
-  color: white;
-}
 
 .home-container .perfil-content-edit .aux-container .vertical-line {
   height: 355px;
@@ -70,6 +52,7 @@
   line-height: 27px;
   color: #F9A006;
   margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .home-container .perfil-content-edit .aux-container .left-container .forms-edit-perfil input {
@@ -82,6 +65,7 @@
   line-height: 24px;
   color: #828282;
   padding-left: 13px;
+  padding-right: 13px;
 }
 
 .home-container .perfil-content-edit .aux-container .left-container .forms-edit-perfil input:focus {
@@ -102,11 +86,17 @@
   color: #FFFFFF;
   margin-bottom: 25px;
   transition: 0.4s ease-out;
+  margin-top: 30px;
 }
 
 .home-container .perfil-content-edit .save-editions:hover{
   transform: scale(1.05);
 }
+
+.home-container .perfil-content-edit .save-editions:focus{
+  outline: none;
+}
+
 .home-container .perfil-content-edit .password-edit{
   width: 215px;
   border: none;
@@ -116,7 +106,57 @@
   font-size: 16px;
   line-height: 24px;  
   text-align: center;
-  
+  margin-bottom:30px;
   color: #E60B82;
+  transition: 0.4s ease-out;
 }
 
+.home-container .perfil-content-edit .password-edit:hover{
+  transform: scale(1.05);
+}
+
+.regex-fone{
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  line-height: 27px;
+  color: #f8af30;
+  margin-bottom: 10px;
+}
+
+#picture__input{
+  display: none;
+}
+
+.picture{
+  margin-left: 10vw;
+  border: 2px solid #E60B82;
+  border-radius: 10px;
+  width: 181px;
+  height: 39px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 26px;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+
+.picture:hover{
+  background-color: #E60B82;
+  color: white;
+}
+
+.picture__image{
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #E60B82;
+  transition: 0.4s ease-in-out;
+}
+
+.picture__image:hover{
+  color: white;
+}

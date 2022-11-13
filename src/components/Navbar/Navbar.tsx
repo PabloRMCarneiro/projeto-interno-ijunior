@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "./Navbar.css";
 
 import Logo from "../../img/logo.png";
@@ -12,16 +12,53 @@ import HambuguerIcon from "../../img/hambuguer-icon.png";
 
 import { useNavigate } from 'react-router-dom'
 
-export default function Navbar() {
+export default function Navbar(props: any) {
 
   const navigate = useNavigate();
   
+  const stylePerfilContainerIsPropsActive = {
+    width: '100%',
+    alignItems: 'center',
+    
+  }
+  
+  const styleNavbarContainerLogoIsPropsActive = {
+    marginLeft: '5%',
+  }
+  
+  const styleNavbarLinksIsPropsActive = {
+    alignItems: 'center',
+  }
+
   const OpenModal = () => {
     if(document.querySelector('.navbar-modal').style.visibility === 'hidden')
       document.querySelector('.navbar-modal').style.visibility = 'visible';
     else
       document.querySelector('.navbar-modal').style.visibility = 'hidden';
   }
+
+  const colocoDepois = () => {
+    if(props.state){
+      document.querySelector('.navbar-container').style.width = stylePerfilContainerIsPropsActive.width;
+      document.querySelector('.navbar-container').style.alignItems = stylePerfilContainerIsPropsActive.alignItems;
+
+      document.querySelector('.navbar-container-logo').style.marginLeft = styleNavbarContainerLogoIsPropsActive.marginLeft;
+
+      document.querySelector('.navbar-links').style.alignItems = styleNavbarLinksIsPropsActive.alignItems;
+    }
+    else{
+      document.querySelector('.navbar-container').style.width = '260px';
+      document.querySelector('.navbar-container').style.alignItems = 'center';
+
+      document.querySelector('.navbar-container-logo').style.marginLeft = '0%';
+
+      document.querySelector('.navbar-links').style.alignItems = 'none';
+    }
+  }
+  
+  useEffect(() => {
+    colocoDepois();
+  }, []);
 
   return (
     <div className="navbar-container">
